@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.idea/
+.vscode/
+
+# As planilhas-fonte possuem metadados internos e não são publicadas.
+docs/*.xls
+
+# Arquivos temporários do SQLite; o índice principal é versionado.
+data/*.sqlite3-shm
+data/*.sqlite3-wal
+data/*.tmp
