@@ -1,0 +1,2 @@
+# A aplicação usa somente a biblioteca padrão do Python.
+# Este arquivo existe para compatibilidade com plataformas de hospedagem.

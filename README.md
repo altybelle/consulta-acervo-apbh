@@ -22,6 +22,12 @@ O repositório está preparado para publicação no Render usando o arquivo `ren
 2. No Render, escolha **New > Blueprint** e conecte o repositório.
 3. Confirme o plano gratuito e aguarde a implantação.
 
+Para configurar o serviço manualmente, use:
+
+- Build Command: `python3 -m pip install -r requirements.txt && python3 -m unittest discover -s tests -v`
+- Start Command: `python3 server.py`
+- Health Check Path: `/api/health`
+
 O serviço recebe a porta do ambiente automaticamente e oferece `/api/health` para a verificação de disponibilidade. Na modalidade gratuita, o Render pode suspender o serviço após um período sem acessos; a primeira visita seguinte pode demorar cerca de um minuto.
 
 As planilhas em `docs` não são enviadas ao GitHub. A demonstração usa apenas `data/acervo.sqlite3`. Consulte [DATA_NOTICE.md](DATA_NOTICE.md) antes de tornar o repositório público.
